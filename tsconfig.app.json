@@ -18,7 +18,17 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "assets/*": ["src/assets/*"],
+      "pages/*": ["src/pages/*"],
+      "components/*": ["src/components/*"],
+      "api/*": ["src/api/*"],
+      "utils/*": ["src/utils/*"],
+      "store/*": ["src/store/*"],
+      "hooks/*": ["src/hooks/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src", "**/*.ts", "**/*.tsx"]
 }
