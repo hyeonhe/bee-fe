@@ -8,7 +8,7 @@ export default function Home() {
         <Link to="/signin">로그인</Link>
       </Button>
       <Button>
-        <Link to="signup">회원가입</Link>
+        <Link to="/signup">회원가입</Link>
       </Button>
     </>
   );
