@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <>
-      <Button>
-        <Link to="/signin">로그인</Link>
-      </Button>
-      <Button>
-        <Link to="/signup">회원가입</Link>
-      </Button>
+      <Link to="/login">
+        <Button>로그인</Button>
+      </Link>
+      <Link to="/signup">
+        <Button>회원가입</Button>
+      </Link>
     </>
   );
 }

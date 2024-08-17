@@ -41,6 +41,7 @@ export default function SignUp() {
         <Input
           value={email}
           placeholder="이메일"
+          type="email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <Button onClick={emailCheck}>중복 확인</Button>

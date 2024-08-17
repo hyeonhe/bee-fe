@@ -1,12 +1,12 @@
 import Home from "pages/Home";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SignIn from "pages/SignIn";
 import SignUp from "pages/SignUp";
+import Login from "pages/Login";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
-  { path: "/signin", element: <SignIn /> },
+  { path: "/login", element: <Login /> },
   { path: "/signup", element: <SignUp /> },
 ]);
 

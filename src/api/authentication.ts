@@ -17,9 +17,14 @@ export async function resendVerification() {
 }
 
 export async function signIn(email: string, password: string) {
-  return await api
-    .post("/authentication/sign-in", { email, password })
-    .then((response) => response.data);
+  try {
+    return await api
+      .post("/authentication/sign-in", { email, password })
+      .then((response) => response.data);
+  } catch (error) {
+    console.log(error);
+    return false;
+  }
 }
 
 export async function signUp(email: string, password: string) {
