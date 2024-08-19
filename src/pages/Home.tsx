@@ -1,7 +1,10 @@
 import { Button } from "antd";
+import { Cookies } from "react-cookie";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  const cookies = new Cookies();
+
   return (
     <>
       <Link to="/login">
@@ -10,6 +13,13 @@ export default function Home() {
       <Link to="/signup">
         <Button>회원가입</Button>
       </Link>
+      {cookies.get("accessToken") ? (
+        <Link to="/mypage">
+          <Button>마이페이지</Button>
+        </Link>
+      ) : (
+        <></>
+      )}
     </>
   );
 }
